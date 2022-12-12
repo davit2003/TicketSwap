@@ -115,78 +115,114 @@
     </div>
   </header><!-- #masthead -->
   <main>
-    <h2 class="text-center" style="margin-top: 40px;">Purchase Ticket</h2>
-    <div style="width: 100%; display: flex; justify-content: center;">
-      <a href="sell.html" class="btn btn-primary" style="margin: 20px auto;">Sell a ticket</a>
-    </div>
-    <table class="table table-responsive table-borderless">
-        
-      <thead>
-        <tr class="bg-light">
-          <th scope="col" width="5%">#</th>
-          <th scope="col" width="20%">Date</th>
-          <th scope="col" width="10%">Status</th>
-          <th scope="col" width="20%">Customer</th>
-          <th scope="col" width="20%">Purchased</th>
-          <th scope="col" width="10%">Price</th>
-          <th scope="col" class="text-end" width="10%"><span>Buy</span></th>
-        </tr>
-      </thead>
-  <tbody>
-    <tr>
-      <td>12</td>
-      <td>1 Oct, 21</td>
-      <td><i class="fa fa-check-circle-o green"></i><span class="ms-1">Verified</span></td>
-      <td><img src="https://i.imgur.com/VKOeFyS.png" width="25"> Giorgi Maisuradze</td>
-      <td>ZEG Tbilisi Storytelling Festival</td>
-      <td class="text-end"><span class="fw-bolder">40₾</span></td>
-      <td><a class="btn btn-success" href="purchase-method.html">Buy</a></td>
-    </tr>
-    
-    <tr>
-      <td>14</td>
-      <td>12 Oct, 21</td>
-      <td><i class="fa fa-dot-circle-o text-danger"></i><span class="ms-1">Unverified</span></td>
-      <td><img src="https://i.imgur.com/nmnmfGv.png" width="25"> Natalia Partskhaladze </td>
-      <td>ZEG Tbilisi Storytelling Festival</td>
-      <td class="text-end"><span class="fw-bolder">50₾</span></td>
-      <td><a class="btn btn-success" href="purchase-method.html">Buy</a></td>
-    </tr>
-    
-    
-    <tr>
-      <td>17</td>
-      <td>1 Nov, 21</td>
-      <td><i class="fa fa-check-circle-o green"></i><span class="ms-1">Verified</span></td>
-      <td><img src="https://i.imgur.com/VKOeFyS.png" width="25"> Tamta Davitaia </td>
-      <td>ZEG Tbilisi Storytelling Festival</td>
-      <td class="text-end"><span class="fw-bolder">50₾</span></td>
-      <td><a class="btn btn-success" href="purchase-method.html">Buy</a></td>
-    </tr>
-    
-    
-    <tr>
-      <td>90</td>
-      <td>19 Oct, 21</td>
-      <td><i class="fa fa-check-circle-o green"></i><span class="ms-1">Verified</span></td>
-      <td><img src="https://i.imgur.com/VKOeFyS.png" width="25"> Travis head</td>
-      <td>ZEG Tbilisi Storytelling Festival</td>
-      <td class="text-end"><span class="fw-bolder">60₾</span></td>
-      <td><a class="btn btn-success" href="purchase-method.html">Buy</a></td>
-    </tr>
-    
-    
-    <tr>
-      <td>12</td>
-      <td>1 Oct, 21</td>
-      <td><i class="fa fa-check-circle-o green"></i><span class="ms-1">Verified</span></td>
-      <td><img src="https://i.imgur.com/nmnmfGv.png" width="25"> Nino Kurashvili </td>
-      <td>ZEG Tbilisi Storytelling Festival</td>
-      <td class="text-end"><span class="fw-bolder">70₾</span></td>
-      <td><a class="btn btn-success" href="purchase-method.html">Buy</a></td>
-    </tr>
-  </tbody>
-</table>
+    <section class="section-page-header">
+			<div class="container">
+				<h1 class="entry-title">Select Payment Method</h1>
+			</div>
+		</section>
+	
+		<section class="section-page-content">
+			<div class="container">
+				<div class="row">
+					<div id="primary" class="col-sm-12 col-md-12">
+						<div class="section-select-payment-method">
+
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active">
+									<a href="#credit-card" aria-controls="credit-card" role="tab" data-toggle="tab">
+										<i class="fa fa-credit-card" aria-hidden="true"></i>
+										Credit Card
+									</a>
+								</li>
+								<li role="presentation">
+									<a href="#paypal" aria-controls="paypal" role="tab" data-toggle="tab">		
+										<i class="fa fa-paypal" aria-hidden="true"></i>
+										Paypal
+									</a>
+								</li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content clearfix">
+								<div role="tabpanel" class="tab-pane active" id="credit-card">
+									<form>
+										<div class="row">
+											<div class="col-sm-12">
+												<label>Name on Card</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-8">
+												<label>Card Number</label>
+												<input type="text" class="form-control" placeholder="0000-0000-0000-0000">
+											</div>
+											<div class="cvv col-sm-4">
+												<label>CVV</label>
+												<input type="text" class="form-control">
+												<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-6">
+												<label>Month</label>
+												<select class="selectpicker dropdown">
+													<option>Select Month</option>
+													<option>January</option>
+													<option>February</option>
+													<option>March</option>
+													<option>April</option>
+													<option>May</option>
+													<option>June</option>
+													<option>July</option>
+													<option>August</option>
+													<option>September</option>
+													<option>October</option>
+													<option>November</option>
+													<option>December</option>
+												</select>
+											</div>
+											<div class="col-sm-6">
+												<label>Year</label>
+												<select class="selectpicker dropdown">
+													<option>Select Year</option>
+													<option value="2030">2030</option>
+													<option value="2029">2029</option>
+													<option value="2028">2028</option>
+													<option value="2027">2027</option>
+													<option value="2026">2026</option>
+													<option value="2025">2025</option>
+													<option value="2024">2024</option>
+													<option value="2023">2023</option>
+													<option value="2022">2022</option>
+													<option value="2021">2021</option>
+													<option value="2020">2020</option>
+													<option value="2019">2019</option>
+													<option value="2018">2018</option>
+													<option value="2017">2017</option>
+												</select>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="paypal"></div>
+							</div>
+							<div class="section-select-payment-method-action">
+								<div class="row">
+									<div class="col-xs-6 col-sm-6">
+										<button class="secondary-link">Cancel</button>
+									</div>
+									<div class="col-xs-6 col-sm-6">
+										<button class="primary-link">Confirm Payment</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>	
+			</div>	
+		</section>
   </main>
   <script src="js/jquery-3.2.0.min.js"></script>
   <script src="js/bootstrap-slider.min.js"></script>
